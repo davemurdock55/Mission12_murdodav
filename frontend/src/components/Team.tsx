@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 
-// interface TeamProps {
-//    school: string;
-//    name: string;
-//    city: string;
-//   // add any other props your component is expecting here
-// }
-// if you do use an interface, make sure to add <TeamProps> after the "extends Component" (and before the "{")
-
-export default class Team extends Component
+// these are the properties I'm passing in and they're types
+export default class Team extends Component < { school: string, name: string, city: string, state: string } >
 {
    render()
    {
 
-      const team: any = this.props;
+
+      const team = this.props;
 
       return (
          <div>
